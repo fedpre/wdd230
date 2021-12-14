@@ -1,0 +1,33 @@
+
+.flex-card {
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    height: 150px;
+}
+
+.directory-card img {
+    width: 200px;
+    margin-bottom: 0;
+    margin-right: .5rem;
+}
+
+.directory-card h3 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.directory-card .card-email {
+    margin-bottom: 0;
+    margin: 0 1rem;
+}
+.directory-card .card-phone {
+    margin-bottom: 0;
+    margin: 0 1rem;
+}
+
+.directory-card a{
+    margin-bottom: 0;
+    margin: 0 1rem;
+    max-width: 150px;
+} 

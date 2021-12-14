@@ -1,0 +1,44 @@
+@media only screen and (min-width: 32.5em) {
+    header img {
+        float: right;
+        box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+        width: 200px;
+        border-radius: 50%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin: 1.5rem;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+        text-align: left;
+        padding: 1rem;
+    }
+
+    header, footer {
+        border-radius: 20px;
+    }
+
+    header, main, footer {
+        margin: auto;
+        max-width: 50vw;
+    }
+
+    main ul{
+        padding-left: 3rem;
+        padding-bottom: 1.5rem;
+        text-align: left;
+    }
+
+    main ul li{
+        list-style-type: none;
+        padding-bottom: 0.7rem;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+
+}

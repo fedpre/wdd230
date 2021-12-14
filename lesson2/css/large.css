@@ -1,0 +1,18 @@
+/* Desktop Views */
+@media only screen and (min-width: 85rem) {
+    header, main, footer {
+        margin: auto;
+        max-width: 70vw;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .hicks-law {
+        grid-column: span 1;
+    }
+
+    
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindTheWeatherToday | Storm Center</title>
+    <meta name="description" content="Storm Center page with a form to input weather anomalies">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="./css/small.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+ 
+</head>
+<body>
+    <aside id="banner" class="banner-show">
+        <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+    </aside>
+    <header>
+        <img src="./images/logo_weather_site_v2_white_opt_notext.png" alt="logo with clouds and the sun">
+        <div class="header-container">
+            <h1>Find The Weather Today</h1>
+            <p>Weather app for all needs!</p>
+        </div>
+        <button class="responsive">&#9776;</button>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./preston.html">Preston</a></li>
+            <li><a href="./soda-springs.html">Soda Spring</a></li>
+            <li><a href="./fish-haven.html">Fish Haven</a></li>
+            <li><a href="./stormcenter.html" class="active">Storm Center</a></li>
+            <li><a href="./gallery.html" >Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="gallery-title">Storm Center</h2>
+        
+        <form action="thanks.html" method="get">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top">Full Name* <input type="text" name="fullName" pattern="^[A-Za-z]([-']?[A-Za-z]+)*( [A-Za-z]([-']?[A-Za-z]+)*)+$" required autofocus minlength="5"></label>
+                <label class="top">Email <input type="email" name="email" placeholder="someone@example.net" pattern="^[A-Za-z0-9_.-+]+@[a-zA-Z0-9.-]+$"></label>
+                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required pattern="^\d{10}$"></label>
+                <label class="top">Zip Code* <input type="number" name="zipCode" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label class="top">Storm Date <input type="date" name="stormDate"></label>
+                <label class="top">Storm Type <input list="stormTypes" name="stormType" id="stormType"></label>
+                <datalist id="stormTypes">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+                <div class="rating-cont">
+                    <label class="sbs sbs-flex">Storm Rating (1-10) <input name="stormRating" id="stormRating" type="range" min="0" max="10" value="3"></label><div class='tickerNumber'></div>
+                </div>
+                
+            
+                <label class="top">Storm Region 
+                    <select name="region" id="region">
+                        <option value="none" selected disabled>Select Region...</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodaSprings">Soda Springs</option>
+                        <option value="fishHaven">Fish Haven</option>
+                    </select>
+                </label>
+                <div>User In-Danger Level</div>
+                <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
+                <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
+                <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label class="top">Additional Information <textarea name="addInfo" id="addInf" cols="40" rows="10"></textarea></label>
+            </fieldset>
+            <div class="btn-position">
+                <input type="submit" value="Send Your Report" class="submitBtn">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="container-map">
+                <img src="./images/map.png" alt="location map" class="map">
+            </div>
+            <div class="container-info">
+                <p><strong>FindTheWeather.Today</strong></p>
+                <div class="contact-info position">
+                    <img src="./images/pin-icon.png" alt="mail icon">
+                    <p>30 N 1st E <br>Preston, ID 83623</p>
+                </div>
+                <div class="contact-info mail">
+                    <img src="./images/mail_icon.png" alt="mail icon">
+                    <a href="mailto:info@findtheweather.today">info@findtheweather.today</a>
+                </div>
+                <div class="contact-info phone">
+                    <img src="./images/phone_icon.png" alt="phone icon">
+                    <a href="#">+1-(800)-000-0000</a>
+                </div>
+                
+                <div class="social-icons">
+                    <a href="https://facebook.com" target= "_blank"><img src="./images/facebook-icon.png" alt="facebook icon"></a>
+                    <a href="https://instagram.com" target= "_blank"><img src="./images/instagram_icon.png" alt="instagram icon"></a>
+                    <a href="https://twitter.com" target= "_blank"><img src="./images/twitter-icon.png" alt="twitter icon"></a>
+                    <a href="https://youtube.com" target= "_blank"><img src="./images/youtube-icon.png" alt="youtube icon"></a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer-info">
+            <span> &copy; FindTheWeather.Today |</span>
+            <a href="#">Attributions |</a>
+            <span> Federico Pregnolato |</span> 
+            <span class="current-date"></span>
+            <span>| Since the last visit: 
+                <span id="days-since"></span> day(s)
+                <span id="hours-since"></span> hour(s)
+                <span id="minutes-since"></span> minute(s)
+                <span id="seconds-since"></span> second(s)
+            </span>
+            
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+    <script src="./js/locstor.js"></script>
+    <script src="./js/lazyload.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="./js/webfontloader.js"></script>
+</body>
+</html>

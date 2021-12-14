@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rome Chamber of Commerce | Homepage</title>
+    <meta name="description" content="Connect with the local business in the Rome area. Become a member to receive all the benefits. Check out our website for more information.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Work+Sans:wght@200;300;400&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/small.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
+    <link rel="icon" href="./favicon.ico">
+</head>
+<body>
+    <aside class="weather-alerts"></aside>
+    <header>
+        <div class="header-container">
+            <img src="./images/logo_rcoc_black.png" alt="logo of rome chamber of commerce">
+            <div class="nav-button">
+                <div class="menu-button-burger"></div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="nav-container nav-toggle">
+            <ul>
+                <li class="active"><a href="./">Home</a></li>
+                <li><a href="./rome.html">Rome</a></li>
+                <li><a href="./directory.html">Directory</a></li>
+                <li><a href="./joinus.html">Join Us</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="hero-box-container">
+            <div class="image-slider-container">
+                <picture>
+                    <source media="(max-width: 400px)" srcset="./images/hero-colosseum-small.jpg">
+                    <source media="(max-width: 800px)" srcset="./images/hero-colosseum-medium.jpg">
+                    <source media="(max-width: 1200px)" srcset="./images/hero-colosseum-large.jpg">
+                    <img src="./images/hero-colosseum-large.jpg" alt="Rome Colosseum">
+                </picture>
+                <picture>
+                    <source media="(max-width: 400px)" srcset="./images/hero-rome-view-small.jpg">
+                    <source media="(max-width: 800px)" srcset="./images/hero-rome-view-medium.jpg">
+                    <source media="(max-width: 1200px)" srcset="./images/hero-rome-view-large.jpg">
+                    <img src="./images/hero-rome-view-large.jpg" alt="Rome View">
+                </picture>
+                <picture>
+                    <source media="(max-width: 400px)" srcset="./images/hero-vatican-small.jpg">
+                    <source media="(max-width: 800px)" srcset="./images/hero-vatican-medium.jpg">
+                    <source media="(max-width: 1200px)" srcset="./images/hero-vatican-large.jpg">
+                    <img src="./images/hero-vatican-large.jpg" alt="Rome Vatican">
+                </picture>
+                <picture>
+                    <source media="(max-width: 400px)" srcset="./images/hero-pantheon-small.jpg">
+                    <source media="(max-width: 800px)" srcset="./images/hero-pantheon-medium.jpg">
+                    <source media="(max-width: 1200px)" srcset="./images/hero-pantheon-large.jpg">
+                    <img src="./images/hero-pantheon-large.jpg" alt="Rome Pantheon">
+                </picture>
+                <picture>
+                    <source media="(max-width: 400px)" srcset="./images/hero-colosseum-small.jpg">
+                    <source media="(max-width: 800px)" srcset="./images/hero-colosseum-medium.jpg">
+                    <source media="(max-width: 1200px)" srcset="./images/hero-colosseum-large.jpg">
+                    <img src="./images/hero-colosseum-large.jpg" alt="Rome Colosseum">
+                </picture>
+            </div>
+            <div class="hero-text flex-small">
+                <h1>Rome Chamber of Commerce</h1>
+                <button class="btn" onclick="window.location.href='./joinus.html'">Join The Chamber</button>
+            </div>
+        </section>
+        <section class="body-container">
+            <div class="chamber-desc-container flex-small">
+                <picture>
+                    <source media="(max-width: 400px)" srcset="./images/hero-colosseum-small.jpg">
+                    <source media="(max-width: 800px)" srcset="./images/hero-colosseum-medium.jpg">
+                    <source media="(max-width: 1200px)" srcset="./images/hero-colosseum-large.jpg">
+                    <img src="./images/hero-colosseum-large.jpg" alt="Colosseum">
+                </picture>
+                <h2>The City of Rome</h2>
+                <p> The Chamber of Commerce of Rome proposes to help business and business owners connect with each other and collaborate. We help small businesses get noticed and expand their operations. Our goal is to attract more entrepreneurs and invest in our territory.</p>
+                <button class="btn btn-mb" onclick="window.location.href='./rome.html'">Learn More</button>
+            </div>
+        </section>
+        <section class="weather-container">
+            <div class="weather-title">
+                <h2>Current weather</h2>
+            </div>
+            <div class="weather-table">
+                <span class="current-temp"></span>
+                <div class="current-w-i">
+                    <span class="current-desc"></span>
+                    <img src="./images/pin-icon.png" alt="weather icon" class="weather-icon">
+                </div>
+                <span class="humidity"></span>
+            </div>
+            <div class="weather-forecast">
+                <div class="w-f-title">
+                    <h2>3-Day Weather Forecast</h2>
+                    <div class="forecast-card">
+                        <h3 class="day-name">day</h3>
+                        <div class="for-container">
+                            <span class="forc"></span>
+                            <img src="./images/pin-icon.png" alt="" class="for-icon">
+                        </div>
+                    </div>
+                    <div class="forecast-card">
+                        <h3 class="day-name">day</h3>
+                        <div class="for-container">
+                            <span class="forc"></span>
+                            <img src="./images/pin-icon.png" alt="" class="for-icon">
+                        </div>
+                    </div>
+                    <div class="forecast-card">
+                        <h3 class="day-name">day</h3>
+                        <div class="for-container">
+                            <span class="forc"></span>
+                            <img src="./images/pin-icon.png" alt="" class="for-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="body-cards">
+            <div class="body-cards-wrapper">
+                <div class="title-body">
+                    <h2>Businesses of the Week</h2>
+                </div>
+                <div class="business-highlight-container flex-card card">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="./images/locanda-small.jpg">
+                        <source media="(max-width: 800px)" srcset="./images/locanda-medium.jpg">
+                        <source media="(max-width: 1200px)" srcset="./images/locanda-large.jpg">
+                        <img src="./images/locanda-large.jpg" alt="Italian Fettuccine on a Plate">
+                    </picture>
+                    <p> Are you ready to taste the most delicious food in Rome? La Locanda has won the award of "Business of the Week" because of his incredible offering, service, and operations. Go there and try it yourself!</p>
+                    <button class="btn btn-mb" onclick="window.location.href='https://www.lalocanda.com/'">Visit The Website</button> 
+                </div>
+                <div class="business-highlight-container flex-card card">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="./images/ortodonthist-small.jpg">
+                        <source media="(max-width: 800px)" srcset="./images/ortodonthist-medium.jpg">
+                        <source media="(max-width: 1200px)" srcset="./images/ortodonthist-large.jpg">
+                        <img src="./images/ortodonthist-large.jpg" alt="Person having braces">
+                    </picture>
+                    <p> We all dread to go to the dentist. Not anymore with MD Paola Falchetti and her team. The practice won the award of "Business of the Week" because of their superior customer support, satisfaction, and retention rate. </p>
+                    <button class="btn btn-mb" onclick="window.location.href='https://www.dentistasangiovanniroma.it/'">Visit The Website</button>
+                </div>
+                <div class="business-highlight-container flex-card card">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="./images/autorepair-small.jpg">
+                        <source media="(max-width: 800px)" srcset="./images/autorepair-medium.jpg">
+                        <source media="(max-width: 1200px)" srcset="./images/autorepair-large.jpg">
+                        <img src="./images/autorepair-large.jpg" alt="People repairing a car">
+                    </picture>
+                    <p> When it comes to fixing your car, no one is better than "AutOmega" repair shop. They work fast and effectively. Bring your car there to see for yourself. They have a special discount code for members of the Chamber of Commerce.</p>
+                    <button class="btn btn-mb" onclick="window.location.href='https://www.carrozzeriaautomega.it/riparazioni-auto'">Visit The Website</button>
+                </div>
+            </div>
+        </section>
+        <section class="directory-container">
+            <div class="title-directory">
+                <h2>Directories</h2>
+            </div>
+            <div class="directories-container">
+                <div class="directory-card">
+                    <img src="./images/icon-restaurant.png" alt="restaurant icon">
+                    <h3>Restaurants</h3>
+                    <button class="btn-directory" onclick="window.location.href='./directory.html'">Go to page &#8594;</button>
+                </div>
+                <div class="directory-card">
+                    <img src="./images/icon-bank.png" alt="restaurant icon">
+                    <h3>Banking</h3>
+                    <button class="btn-directory" onclick="window.location.href='./directory.html'">Go to page &#8594;</button>
+                </div>
+                <div class="directory-card">
+                    <img src="./images/icon-tooth.png" alt="restaurant icon">
+                    <h3>Dental Care</h3>
+                    <button class="btn-directory" onclick="window.location.href='./directory.html'">Go to page &#8594;</button>
+                </div>
+                <button class="btn-directory" onclick="window.location.href='./directory.html'">More &#8594;</button>
+            </div>
+        </section>
+        <section class="events-container">
+            <div class="events-title">
+                <h2>Upcoming Events</h2>
+            </div>
+            <div class="event-card card flex-card">
+                <picture>
+                    <source media="(max-width: 400px)" srcset="./images/event-marathon-small.jpg">
+                    <source media="(max-width: 800px)" srcset="./images/event-marathon-medium.jpg">
+                    <source media="(max-width: 1200px)" srcset="./images/event-marathon-large.jpg">
+                    <img src="./images/event-marathon-large.jpg" alt="People running">
+                </picture>
+                <p> The famous Rome marathorn 2022 is around the corner. It is an amazing opportunity to showcase your business to thousand to people. Contact us to get your stand there!</p>
+                <button class="btn btn-mb" onclick="window.location.href='./joinus.html'">I Want to Go!</button>
+            </div>
+        </section>
+        <section class="contact-form-hp flex-small">
+            <div class="contact-title-hp">
+                <h2>Ready To Join Us?</h2>
+                <p> Don't wait any longer! Fill out the form and become a member of the Rome Chamber of Commerce!</p>
+            </div>
+            <button class="btn btn-mb" onclick="window.location.href='./joinus.html'">Fill Out The Form</button>
+        </section>
+        
+    </main>
+    <footer>
+        <div class="footer-container">
+            <img src="./images/logo_rcoc_white.png" alt="logo of rome chamber of commerce">
+            
+        </div>
+        <div class="container-info">
+            <div class="contact-info position">
+                <img src="./images/pin-icon.png" alt="mail icon">
+                <p>Via Roma 34 <br>Rome, Italy 00144</p>
+            </div>
+            <div class="contact-info mail">
+                <img src="./images/mail_icon.png" alt="mail icon">
+                <a href="mailto:info@findtheweather.today">info@romechamberofcommerce.it</a>
+            </div>
+            <div class="contact-info phone">
+                <img src="./images/phone_icon.png" alt="phone icon">
+                <a href="#">(+39) 339-8760-789</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://facebook.com" target= "_blank"><img src="./images/facebook-icon.png" alt="facebook icon"></a>
+                <a href="https://instagram.com" target= "_blank"><img src="./images/instagram_icon.png" alt="instagram icon"></a>
+                <a href="https://twitter.com" target= "_blank"><img src="./images/twitter-icon.png" alt="twitter icon"></a>
+                <a href="https://youtube.com" target= "_blank"><img src="./images/youtube-icon.png" alt="youtube icon"></a>
+            </div>
+        </div>
+        <div class="sub-footer">
+            <span> &copy; romechamberofcommerce.it |</span>
+            <a href="#">Attributions |</a>
+            <span> Federico Pregnolato </span> 
+            <span class="current-date"></span>
+            <span>| Last Modified: 
+                <span class="last-modified"></span>
+            </span>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="./js/webfontloader.js"></script> 
+    <script src="./js/main.js"></script>
+    <script src="./js/lastmodified.js"></script>
+    <script src="./js/weatherapi.js"></script>
+</body>
+</html>

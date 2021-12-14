@@ -1,0 +1,268 @@
+/* General styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.15rem;
+}
+
+h3 {
+    font-size: 1.05rem;
+}
+
+/* Header */
+
+header {
+    background-color: #264653;
+    color: #fff;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-around; 
+}
+
+header img {
+    width: 100px;
+    padding: 0.5rem;
+}
+
+header h1 {
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+}
+
+header p {
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+header button {
+    border: none;
+    background-color: transparent;
+    padding: 0.25rem 0.5rem;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+header button:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Nav */
+
+nav {
+    background-color: #e76f51;
+    color: #000;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+nav ul li {
+    flex: 1 1 100%;
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 0.75rem;
+    font-size: 1rem;
+    color: #000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+nav a:hover{
+    background-color: #2a9d8f;
+}
+
+.navigation li {
+    display: none;
+}
+
+.active {
+    background-color: #2a9d8f;
+    color: #000;
+}
+
+/* Main */
+
+main {
+    margin: 0.8rem;
+}
+
+
+main #hero-box h2,
+main #weather-summary h3 {
+    padding: 0 0 1rem 0.6rem;
+}
+
+main #hero-box h2 {
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+
+main #weather-summary h3,
+main #five-day-forecast h3,
+main #five-day-forecast h4,
+main #five-day-forecast p
+ {
+    padding: 0.8rem 0;
+}
+
+main #five-day-forecast h3,
+main #weather-summary h3 {
+    text-align: center;
+    background-color: #ffb703;
+}
+
+main #five-day-forecast img {
+    margin-bottom: 1rem;
+}
+
+
+main img {
+    width:100%;
+}
+
+.card {
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 0.8rem;
+    margin: 1.5rem 0;
+    overflow: hidden;
+}
+.card-1-2 {
+
+    padding: 0.8rem;
+    overflow: hidden;
+}
+
+.card-1 {
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 1.5rem 0;
+    overflow: hidden;
+}
+
+/* Footer */
+
+footer {
+    background-color: #264653;
+    color: #fff;
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+footer p {
+    font-size: 1rem;
+    padding-bottom: .5rem;
+}
+
+footer .contact-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0.7rem;
+}
+
+footer .contact-info a {
+    text-decoration: none;
+    color: #fff;
+    font-size: .8rem;
+}
+
+footer .contact-info a:hover {
+    color: rgba(255,255,255,0.5);
+}
+
+footer .contact-info img {
+    width: 20px;
+    margin-right: 0.8rem;
+}
+
+footer .map {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+footer .footer-bar {
+    height:30px;
+    background-color: #264653;
+}
+
+footer .social-icons {
+    display: flex;
+
+}
+
+.footer-info{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.footer-info span,
+.footer-info a {
+    font-size: 0.8rem;
+}
+
+footer .footer-info a {
+    text-decoration: none;
+    color: #fff;
+}
+footer .footer-info a:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 1rem;
+    font-size: 1.3rem;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 0.7rem;
+    margin-top: 0.5rem;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}

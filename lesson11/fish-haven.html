@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindTheWeatherToday | Fish Haven</title>
+    <meta name="description" content="Fish Haven Town page to find information about weather, events, and activities">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="./css/small.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+ 
+</head>
+<body>
+    <aside id="banner" class="banner-show">
+        <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+    </aside>
+    <header>
+        <img src="./images/logo_weather_site_v2_white_opt_notext.png" alt="logo with clouds and the sun">
+        <div class="header-container">
+            <h1>Find The Weather Today</h1>
+            <p>Weather app for all needs!</p>
+        </div>
+        <button class="responsive">&#9776;</button>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./preston.html">Preston</a></li>
+            <li><a href="./soda-springs.html">Soda Spring</a></li>
+            <li><a href="./fish-haven.html" class="active">Fish Haven</a></li>
+            <li><a href="./stormcenter.html">Storm Center</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="hero-box-container">
+            <section id="hero-box" class="">
+                <h2>Fish Haven Idaho</h2>
+                <!-- <img src="./images/preston-idaho.jpg" alt="portion of Presto, Idaho city"> -->
+                <picture>
+                    <!-- CHANGE PICTURES -->
+                    <source media="(max-width: 400px)" srcset="images/fish-haven-small.jpg">
+                    <source media="(max-width: 800px)" srcset="images/fish-haven-medium.jpg">
+                    <source media="(max-width: 1200px)" srcset="images/fish-haven-large.jpg">
+                    <img src="./images/fish-haven-large.jpg" alt="fish-haven-idaho">
+                </picture>
+            </section>
+            <section id="weather-summary" class="card-1">
+                <h3>Weather Summary</h3>
+                <div class="container card-1-2">
+                    <ul class="summary-tags">
+                        <li>Currently: </li>
+                        <li>High: </li>
+                        <li>Wind Chill: </li>
+                        <li>Humidity: </li>
+                        <li>Wind Speed: </li>
+                    </ul>
+                    <ul class="summary-info">
+                        <li class="currentWeather"></li>
+                        <li class="temperature"></li>
+                        <li class="wind-chill">24 °F </li>
+                        <li class="humidity">69%</li>
+                        <li class="wind-speed">12 mph </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="container-forecast">
+            <section class="card-1 forecast">
+                <h3>5 Day Weather Forecast</h3>
+                <div class="container-forecast-card">
+                    <div class="forecast-card">
+                        <h3 class="day-name">WED</h3>
+                        <div class="img-temp-cont">
+                            <img src="./images/sun.png" alt="sun" class="weat-img">
+                            <span class="forc">89 °F</span>
+                        </div>
+                    </div>
+                    <div class="forecast-card">
+                        <h3 class="day-name">THUR</h3>
+                        <div class="img-temp-cont">
+                            <img src="./images/sun.png" alt="sun" class="weat-img">
+                            <span class="forc">87 °F</span>
+                        </div>
+                    </div>
+                    <div class="forecast-card">
+                        <h3 class="day-name">FRI</h3>
+                        <div class="img-temp-cont">
+                            <img src="./images/sun.png" alt="sun" class="weat-img">
+                            <span class="forc">78 °F</span>
+                        </div>
+                    </div>
+                    <div class="forecast-card">
+                        <h3 class="day-name">SAT</h3>
+                        <div class="img-temp-cont">
+                            <img src="./images/sun.png" alt="sun" class="weat-img">
+                            <span class="forc">75 °F</span>
+                        </div>
+                    </div>
+                    <div class="forecast-card">
+                        <h3 class="day-name">SUN</h3>
+                        <div class="img-temp-cont">
+                            <img src="./images/sun.png" alt="sun" class="weat-img">
+                            <span class="forc">72 °F</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="events-articles-container"></div>
+            <section id="five-day-forecast" class="card-1">
+                <h3>Articles</h3>
+                <div class="container-2 card-1-2">
+                    <img src="./images/fishhaven-article.jpg" alt="Christmas Tree Lights">
+                    <h4>Light the Tree</h4>
+                    <p class="article-subtitle">by Bob Gallagher</p>
+                    <p>Christmas. The lights. The smell of gingerbread. Kids running around playing with the snow. It’s the best time of year! Come join us to light the city town’s Christmas tree this year. On December 12, we will gather in front of the town hall and celebrate together. We will have food and drinks available for all of you. If you want, bring your dessert to share with others. 
+                        <br><br>
+                        During the celebration, we would like to invite to participate in the charity potluck and be generous with your offerings. All the money will be sent to help children have a better Christmas in Africa. We do this every year, and it is touching how generous people are. Let’s help as many people as we can to have a merry Christmas.
+                        </p>
+                </div>
+            </section>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="container-map">
+                <img src="./images/map.png" alt="location map" class="map">
+            </div>
+            <div class="container-info">
+                <p><strong>FindTheWeather.Today</strong></p>
+                <div class="contact-info position">
+                    <img src="./images/pin-icon.png" alt="mail icon">
+                    <p>30 N 1st E <br>Preston, ID 83623</p>
+                </div>
+                <div class="contact-info mail">
+                    <img src="./images/mail_icon.png" alt="mail icon">
+                    <a href="mailto:info@findtheweather.today">info@findtheweather.today</a>
+                </div>
+                <div class="contact-info phone">
+                    <img src="./images/phone_icon.png" alt="phone icon">
+                    <a href="#">+1-(800)-000-0000</a>
+                </div>
+                
+                <div class="social-icons">
+                    <a href="https://facebook.com" target= "_blank"><img src="./images/facebook-icon.png" alt="facebook icon"></a>
+                    <a href="https://instagram.com" target= "_blank"><img src="./images/instagram_icon.png" alt="instagram icon"></a>
+                    <a href="https://twitter.com" target= "_blank"><img src="./images/twitter-icon.png" alt="twitter icon"></a>
+                    <a href="https://youtube.com" target= "_blank"><img src="./images/youtube-icon.png" alt="youtube icon"></a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer-info">
+            <span> &copy; FindTheWeather.Today |</span>
+            <a href="#">Attributions |</a>
+            <span> Federico Pregnolato |</span> 
+            <span class="current-date"></span>
+            <span>| Data Provided By <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a></span>
+            <span>| Since the last visit: 
+                <span id="days-since"></span> day(s)
+                <span id="hours-since"></span> hour(s)
+                <span id="minutes-since"></span> minute(s)
+                <span id="seconds-since"></span> second(s)
+            </span>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="./js/webfontloader.js"></script>
+    <script src="./js/locstor.js"></script>
+    <script src="./js/fishhavendata.js"></script>
+    <script src="./js/eventfishhaven.js"></script>
+</body>
+</html>

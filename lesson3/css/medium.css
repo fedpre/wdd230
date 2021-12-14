@@ -1,0 +1,54 @@
+@media only screen and (min-width: 37.5rem) {
+    
+    main {
+        padding: 1rem;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    header, nav, main, footer {
+        margin: 0 auto;
+        max-width: 75vw;
+    }
+
+    nav ul li{
+        width: 100%;
+        
+    }
+
+    nav ul li a{
+        padding: 1.2rem;
+        font-size: 1.1rem;
+ 
+    }
+
+    .border-line-nav{
+        border-right: 1px solid #333;
+        border-bottom: none;
+    }
+
+    .border-line-typ{
+        border-bottom: none;
+    }
+
+    footer {
+        display: block;
+    }
+
+    .color-scheme,
+    .typography {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .personas {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+    }
+
+}

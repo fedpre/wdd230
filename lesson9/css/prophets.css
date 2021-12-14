@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #D7D6D6;
+}
+
+header {
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    background-color: #36413E;
+    color: white;
+    padding: 2rem 0;
+}
+
+div.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: 'Work Sans', sans-serif;
+    
+}
+
+div.cards section {
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0 , 0, 0, 0.2);
+    border-radius: 4px;
+    background-color: #beb2c8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 1rem auto;
+}
+
+div.cards h2 {
+    text-align: center;
+    padding: .5rem;
+}
+
+div.cards p {
+    text-align: center;
+    padding: .2rem;
+}
+
+div.cards img {
+    margin: 1rem 0;
+}
+
+section img{
+    width: 150px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+footer {
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    background-color: #36413E;
+    color: white;
+    padding: 2rem 0;
+}
+
+@media only screen and (min-width: 32.5em) {
+    div.cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    
+    }
+}
+
+@media only screen and (min-width: 72em) {
+    div.cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    }
+}

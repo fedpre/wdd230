@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+}
+
+header, nav, main, footer {
+    margin: auto;
+    max-width: 100vw;
+}
+
+header, footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    padding: 1rem;
+    background-color: #264653;
+    color: #fff;
+}
+
+nav {
+    text-align: center;
+    background-color: #E87659;
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+nav ul li {
+    flex: 1 1 100%;
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 0.75rem;
+    font-size: 1rem;
+    color: #000;
+    border-bottom: 1px solid #333;
+}
+
+nav a:hover{
+    background-color: #2a9d8f;
+}
+
+main {
+    padding: 0.5rem;
+}
+
+
+main section h2{
+    font-size: 1.4rem;
+    padding-bottom: 0.3rem;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    padding-bottom: 1.5rem;
+}
+
+main section img {
+    width: 300px;
+    padding: 1rem 0;
+}
+
+.active {
+    background-color: #2a9d8f;
+}
+
+/* Target Audience Page */
+
+.persona-1,
+.persona-2 {
+    margin-bottom: 1.5rem;
+}
+
+.target-audience ul,
+.scenarios ul,
+.persona-1 ul,
+.persona-2 ul {
+    padding-left: 1.5rem;
+    padding-bottom: 1rem;
+    
+}
+
+.target-audience ul li{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.target-audience p {
+    padding-bottom: 0.3rem;
+}
+
+.card {
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.personas {
+    padding-bottom: 1rem;
+}
+
+/* Color Scheme */
+
+main h2 {
+    padding-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.site-header-color {
+    background-color:#264653;
+    color: #fff;
+}
+
+.site-primary-nav {
+    background-color: #E87659;
+    color: #000;
+}
+
+.site-primary-nav:hover{
+    background-color: #2a9d8f;
+}
+
+.site-footer-nav {
+    background-color: #264653;
+    color: #fff;
+}
+.site-heading-1 {
+    background-color: #e9c46a;
+    color: #000;
+}
+
+/* Typography */
+
+.site-header-font {
+    font-size: 40px;
+}
+
+.site-primary-nav-font {
+    font-size: 18px;
+}
+
+.site-footer-nav-font {
+    font-size: 18px;
+}
+.site-heading-1-font {
+    font-size: 28px;
+}
+.site-heading-2-font {
+    font-size: 24px;;
+}
+.site-heading-3-font {
+    font-size: 20px;
+}
+
+.site-paragraph-text-font {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+

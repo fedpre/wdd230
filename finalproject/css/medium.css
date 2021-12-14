@@ -1,0 +1,207 @@
+@media only screen and (min-width: 32.5em) {
+    /* NAVBAR */
+    .nav-toggle {
+        opacity: 1;
+        height: 100%;
+        transform: translateY(0);
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .nav-container ul{
+        display: flex;
+    }
+
+    /* HEROBOX */
+    .hero-box-container .hero-text {
+        top: 100px;
+        height: 400px;
+    }
+
+    .hero-box-container .hero-text h1 {
+        font-size: 6rem;
+        width: 75%;
+    }
+
+    /* BODY CONTAINER */
+    .chamber-desc-container {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    /* WEATHER CONTAINER */
+    .weather-container {
+        width: 60%;
+    }
+
+    /* BODY CARDS BUSINESS */
+    .body-cards-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+    }
+
+    .title-body {
+        grid-column: span 2;
+    }
+
+    .business-highlight-container {
+        width: 350px;
+        justify-self: center;
+        height: 400px;
+    }
+
+    .directory-container {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    /* UPCOMING EVENTS */
+    .event-card {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .event-card img {
+        width: 100%;
+    }
+
+    /* Footer Info */
+    .container-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sub-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .joinus-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .form-wrapper {
+        margin: 1rem auto;
+        width: 60%;
+    }
+
+    .sub-tier-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2rem;
+    }
+
+    .tier {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .thanks-container{
+        padding: 1rem;
+        width: 60%;
+        margin: 0 auto;
+    }
+    
+    .thanks-title {
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .thanks-title h1{
+        font-size: 3.5rem;
+    }
+    .thanks-title p {
+        font-size: 1.5rem;
+    }
+
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 2rem;
+    }
+
+    .contact-form {
+        grid-column: span 2;
+    }
+
+    .contact-form form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .content-top-txt {
+        grid-column: span 2;
+    }
+
+    .btn-position-contact {
+        grid-column: span 2;
+    }
+
+    .contact-top {
+        margin-right: 1rem;
+    }
+
+    .map {
+        margin: 2rem;
+    }
+
+    .bod-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .bod-title {
+        grid-column: span 2;
+    }
+
+    .bod-card {
+        width: 300px;
+        margin: 2rem auto;
+    }
+
+
+    .flex-directory {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .grid-directory {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        padding: 2rem;
+    }
+
+    .directory-icons {
+        display: flex;
+        align-items: center;
+    }
+    
+    .directory-icons .grid-icon {
+        padding-right: 1rem;
+    }
+    
+    .directory-icons .grid-icon:hover,
+    .directory-icons .list-icon:hover {
+        font-size: 2.2rem;
+        transition: all .2s ease-in-out;
+    }
+    
+    .directory-icons .list-icon:hover {
+        font-size: 2.8rem;
+    }
+    
+}

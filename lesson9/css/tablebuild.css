@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+:root{
+    --color-1: #e7f0ed;
+    --color-2: #e7ffed;
+    --color-3: #628ca6;
+    --color-4: #7fb9c2;
+    --white: #fff;
+    --black: #000;
+    --border: rgb(180, 180, 180);
+}
+
+table {
+    border: 1px solid var(--border);
+    margin: 10px auto;
+    border-collapse: collapse;
+    box-shadow: 10px 10px 10px var(--color-3);
+}
+
+thead tr:first-child th{
+    background-color: var(--color-4);
+    color: var(--black);
+    padding: 10px;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+th, td {
+    padding: 7px 15px;
+    border: thin solid var(--border);
+}
+
+th {
+    background-color: var(--color-3);
+    color: var(--white);
+    font-weight: bold;
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--color-2);
+}
+tbody tr:nth-child(odd) {
+    background-color: var(--color-1);
+}
+
+tbody tr:nth-child(5) td:first-child {
+    font-style: italic;
+}
+
+tfoot tr:first-child th {
+    font-size: .7rem;
+    background-color: var(--color-4);
+    color: var(--black);
+    padding: 10px
+}
+
+.selected {
+    background-color: var(--color-3);
+    color: var(--white);
+}

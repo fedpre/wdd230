@@ -1,0 +1,33 @@
+/* Tablet Views */
+@media only screen and (min-width: 45rem) {
+    header, main, footer {
+        margin: auto;
+        max-width: 80vw;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+
+    header {
+        border-radius: 0 0 20px 20px;
+        padding-bottom: 1.5rem;
+    }
+    footer {
+        border-radius: 20px 20px 0 0;
+        padding: 1.5rem;
+    }
+
+    .hicks-law {
+        grid-column: span 2;
+    }
+
+
+
+
+}
